@@ -1,0 +1,34 @@
+
+.headerContainer {
+  height: 75px;
+  padding: 24px 43px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 51px;
+    width: 166px;
+  }
+}
+
+@media (max-width: 980px) {
+  .headerContainer {
+    padding: 15px 24px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .headerContainer {
+    padding: 2px 5px;
+    height: 42px;
+
+
+    .logo {
+      height: 42px;
+      width: 138px;
+    }
+  }
+}

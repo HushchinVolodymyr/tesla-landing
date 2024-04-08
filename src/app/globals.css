@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  --ipad-width: 980;
+  --mobile-width: 390;
+
+  --accent-color: #E51937;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+

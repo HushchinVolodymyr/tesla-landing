@@ -1,0 +1,304 @@
+.thirdBlockContainer {
+  display: flex;
+  position: relative;
+
+  .infoContainer {
+    padding: 56px 51px;
+    background-color: var(--accent-color);
+    width: 440px;
+    height: 900px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 0;
+
+    .text {
+
+      & h1 {
+        width: 316px;
+        font-size: 30px;
+        font-weight: var(--font-semibold);
+        line-height: 1;
+      }
+
+      & h2 {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: var(--font-medium);
+      }
+    }
+
+    .guardRate {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      & h1 {
+        font-size: 30px;
+        font-weight: var(--font-semibold);
+
+      }
+
+      .marks {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+
+        .front, .side, .sideStand,
+        .driver, .passenger {
+          display: flex;
+          gap: 32px;
+          align-items: center;
+
+
+          & h1 {
+            font-size: 17px;
+            font-weight: var(--font-bold);
+            width: 119px;
+
+            & span {
+              font-size: 10px;
+              font-weight: var(--font-bold);
+              color: #ffffff;
+              opacity: .7;
+            }
+          }
+
+          .stars {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+          }
+
+        }
+      }
+
+    }
+
+    .shieldContainer {
+      display: flex;
+      gap: 22px;
+
+
+      .text {
+        align-self: flex-end;
+
+        & h1 {
+          font-size: 59px;
+          font-weight: var(--font-semibold);
+          line-height: 1;
+        }
+
+        & h2 {
+          margin-top: 0;
+          font-size: 25px;
+          font-weight: var(--font-semibold);
+          line-height: 1;
+        }
+      }
+    }
+
+    .orderContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 347px;
+
+      .text {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 170px;
+        cursor: pointer;
+
+        & h1 {
+          font-size: 13px;
+          font-weight: var(--font-semibold);
+          line-height: 1;
+        }
+
+      }
+
+      .btn {
+        width: 160px;
+        height: 40px;
+        border: 2px solid white;
+        transition: .5s ease;
+        font-size: 13px;
+        font-weight: var(--font-bold);
+
+        &:hover {
+          background-color: white;
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
+
+  .photoContainer {
+    z-index: 1;
+    position: absolute;
+    left: 440px;
+    height: 900px;
+
+    & h1 {
+      width: 830px;
+      font-size: 200px;
+      font-weight: var(--font-semibold);
+      color: var(--accent-color);
+      opacity: .15;
+      position: relative;
+      top: 97px;
+      left: 5%;
+      line-height: 1;
+      z-index: 2;
+    }
+
+    .teslaImg {
+      width: 1049px;
+      height: 592px;
+      position: relative;
+      top: -50px;
+      right: 84px;
+      transform: scale(1.05);
+      z-index: 3;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .thirdBlockContainer {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .infoContainer {
+      align-items: center;
+      height: 487px;
+      width: 100%;
+
+
+      & div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 45%;
+        gap: 0;
+      }
+
+      .guardRate {
+        width: 45%;
+
+        & h1 {
+          line-height: 1;
+        }
+      }
+
+      .shieldContainer {
+        display: none;
+      }
+
+      .orderContainer {
+        display: flex;
+        width: 450px;
+        margin: 0 auto;
+
+        .text {
+          width: 201px;
+          display: flex;
+          flex-direction: row;
+
+          & h1 {
+            width: 167px;
+          }
+        }
+
+        .btn {
+          font-size: 16px;
+          font-weight: var(--font-bold);
+          width: 220px;
+          height: 55px;
+        }
+      }
+    }
+
+    .photoContainer {
+      width: 100%;
+      height: auto;
+      position: static;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & h1 {
+        max-width: 665px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        font-size: 148px;
+      }
+
+      .teslaImg {
+        position: static;
+        transform: scale(1);
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .thirdBlockContainer {
+
+    .infoContainer {
+      height: auto;
+      padding: 30px 30px;
+
+      .text {
+        width: 100%;
+
+        & h1 {
+          font-size: 30px;
+        }
+
+        & h2 {
+
+        }
+      }
+
+      .guardRate {
+        display: none;
+      }
+
+      .orderContainer {
+        display: none;
+      }
+
+    }
+
+    .photoContainer {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+      & h1 {
+        max-width: 665px;
+        top: 0;
+        left: 0;
+        font-size: 75px;
+      }
+
+      .teslaImg {
+        position: static;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

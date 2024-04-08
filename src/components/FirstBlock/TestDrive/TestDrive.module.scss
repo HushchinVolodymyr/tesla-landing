@@ -1,0 +1,242 @@
+.testDriveContainer {
+  max-width: 800px;
+  display: flex;
+  margin: 0 auto;
+  gap: 105px;
+
+  .infoContainer {
+    display: flex;
+    gap: 81px;
+
+    .speedContainer {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      .speedIcon {
+        width: 46px;
+        height: 34px;
+      }
+    }
+
+    .distanceContainer {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      .distanceIcon {
+        width: 30px;
+        height: 50px;
+      }
+    }
+
+    .InfoContainer {
+      .MainText {
+        font-size: 35px;
+        font-weight: var(--font-semibold);
+
+        .SmallText {
+          font-size: 20px;
+          font-weight: var(--font-semibold);
+        }
+      }
+
+      .AdditionalText {
+        font-size: 12px;
+        font-weight: var(--font-regular);
+        position: relative;
+        top: -15px;
+      }
+    }
+  }
+
+
+  .orderContainer {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    .textContainer {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      .icon{
+        width: 22px;
+        height: 22px;
+        z-index: 1;
+        transform: translateY(50%);
+      }
+
+      .iconShadow {
+        z-index: 0;
+        position: relative;
+        transform: translateY(-40%);
+        opacity: .3;
+        filter: blur(3px);
+      }
+
+      .iconRed {
+        display: none;
+      }
+
+      .text {
+        font-size: 13px;
+        font-weight: var(--font-bold);
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 980px){
+  .testDriveContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+    justify-content: flex-start;
+    height: 194px;
+
+    .infoContainer {
+      width: 487px;
+      gap: 0px;
+      justify-content: space-between;
+
+
+      .speedContainer {
+
+        .speedIcon {
+          width: 66px;
+          height: 50px;
+        }
+
+      }
+
+     .distanceContainer{
+
+       .distanceIcon {
+         width: 44px;
+         height: 71px;
+       }
+     }
+
+      .InfoContainer {
+        .MainText {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+
+  .orderContainer{
+    .textContainer{
+
+      .iconContainer {
+
+        .icon {
+          display: none;
+        }
+
+        .iconShadow {
+          display: none;
+        }
+
+        .iconRed {
+          display: block;
+        }
+      }
+
+      .text{
+        font-size: 13px;
+        font-weight: var(--font-bold);
+        color: var(--accent-color);
+        text-shadow: 0px 0px 0px transparent;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px){
+  .testDriveContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+    height: 126px;
+
+    .infoContainer {
+      width: 283px;
+      height: 43px;
+      gap: 0px;
+      justify-content: space-between;
+
+
+      .speedContainer {
+        width: 127px;
+
+        .speedIcon {
+          width: 38px;
+          height: 28px;
+        }
+      }
+
+      .distanceContainer{
+        width: 113px;
+
+        .distanceIcon {
+          width: 25px;
+          height: 41px;
+        }
+      }
+
+      .InfoContainer {
+        .MainText {
+          font-size: 27px;
+
+          .SmallText {
+            font-size: 15px;
+
+          }
+        }
+
+        .AdditionalText {
+          font-size: 10px;
+        }
+      }
+    }
+
+
+    .orderContainer{
+      display: flex;
+      width: 303px;
+      gap: 22px;
+
+      .textContainer{
+
+
+        .iconContainer {
+
+          .icon {
+            width: 22px;
+            height: 22px;
+            color: var(--accent-color);
+            transform: translateY(0%);
+          }
+
+          .iconShadow {
+            display: none;
+          }
+        }
+
+        .textMobile{
+          width: 89px;
+          font-size: 13px;
+          font-weight: var(--font-bold);
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
+}

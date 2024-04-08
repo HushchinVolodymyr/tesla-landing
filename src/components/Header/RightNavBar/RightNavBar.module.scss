@@ -1,0 +1,32 @@
+.rightNavContainer {
+  width: 150px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+
+  .navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    ul {
+      font-weight: var(--font-semibold);
+      cursor: pointer;
+    }
+  }
+
+  .menuBtn {
+    cursor: pointer;
+  }
+
+}
+
+@media (max-width: 980px) {
+  .rightNavContainer {
+    .navContainer {
+      display: none;
+    }
+  }
+}
